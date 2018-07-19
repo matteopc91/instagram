@@ -20,7 +20,7 @@ public class Login {
 	
 public Utenti login(String user,String pass) {
 		
-		Query q = entitymanager.createNativeQuery("select u.id from utenti u where u.user=? and u.pass=md5(?)");
+		Query q = entitymanager.createNativeQuery("select u.id from instagram.utenti u where u.user=? and u.pass=md5(?)");
 		q.setParameter(1, user);
 		q.setParameter(2, pass);
 		

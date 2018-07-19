@@ -18,6 +18,7 @@ public class Like1 {
 	@JoinColumn(name="id_foto")
 	private Foto foto;
 	
+	@ManyToOne
 	@JoinColumn(name="id_utente")
 	private Utenti utenti;
 

@@ -19,7 +19,7 @@ public class Connessione {
 	private EntityManager entitymanager;
 
 	public Connessione() {
-		emfactory = Persistence.createEntityManagerFactory("Eclipselink_JPA");
+		emfactory = Persistence.createEntityManagerFactory("hibe");
 		entitymanager = emfactory.createEntityManager();
 	}
 
